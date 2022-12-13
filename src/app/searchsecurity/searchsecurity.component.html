@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Security Code</label>
+                    <input name="scode" [(ngModel)]="scode"type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-success">search</button>
+                </div>
+        </div>
+        
+        <div class="row g-3 mt-5" *ngFor="let j of searchsecurity">
+
+
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+ 
+   
+ 
+                <label for="" class="form-label">Name</label>
+ 
+   
+ 
+                <input  type="text" class="form-control" value="{{j.name}}">
+ 
+   
+ 
+            </div>
+ 
+   
+ 
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+ 
+   
+ 
+                <label for="" class="form-label">Address</label>
+ 
+   
+               <textarea name="" id="" cols="30" rows="10" class="form-control" value="{{j.address}}"></textarea>
+                 </div>
+ 
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+ 
+   
+ 
+                <label for="" class="form-label">Email id</label>
+ 
+   
+ 
+                <input  type="text" class="form-control" value="{{j.email}}">
+ 
+   
+ 
+            </div>  
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+ 
+ 
+ 
+             <label for="" class="form-label">Phone Number</label>
+ 
+ 
+ 
+             <input type="text" class="form-control" value="{{j.phone}}">
+ 
+ 
+ 
+         </div>
+
+      <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+ 
+        <label for="" class="form-label">Username</label>
+ 
+ 
+       <input  type="text" class="form-control" value="{{j.username}}">
+ 
+        </div>
+         
+       <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+       <button (click)="deleteBtnclick(j.id)" class="btn btn-success">Delete</button>
+         </div>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ 
+
+
