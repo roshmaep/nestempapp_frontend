@@ -47,5 +47,11 @@ export class ApiService {
   getempprofile=(datatosend:any)=>{
     return this.http.post("http://localhost:8080/viewprofile",datatosend)
   }
+  securityLogin=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/securitylogin",dataToSend)
+  }
+  getsecurityprofile=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/securityviewprofile",datatosend)
+  }
   
 }

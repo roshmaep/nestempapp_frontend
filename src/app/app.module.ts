@@ -17,6 +17,9 @@ import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.comp
 import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
+import { ViewsecurityprofileComponent } from './viewsecurityprofile/viewsecurityprofile.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -54,7 +57,15 @@ component:SearchsecurityComponent
 {
   path:"viewprofile",
   component:ViewprofileComponent
+},{
+  path:"securitylogin",
+  component:SecurityloginComponent
+},
+{
+  path:"viewsecurityprofile",
+  component:ViewsecurityprofileComponent
 }
+
 ]
 @NgModule({
   declarations: [
@@ -69,7 +80,10 @@ component:SearchsecurityComponent
     ViewallsecurityComponent,
     EmploginComponent,
     EmpnavbarComponent,
-    ViewprofileComponent
+    ViewprofileComponent,
+    SecurityloginComponent,
+    SecuritynavbarComponent,
+    ViewsecurityprofileComponent
   ],
   imports: [
     BrowserModule,
