@@ -12,6 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import {HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewallempComponent } from './viewallemp/viewallemp.component';
+import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -34,6 +36,13 @@ component:SearchsecurityComponent
 },{
   path:"navadmin",
   component:NavbarComponent
+},{
+  path:"viewemp",
+  component:ViewallempComponent
+},
+{
+  path:"viewsecurity",
+  component:ViewallsecurityComponent
 }
 ]
 @NgModule({
@@ -44,7 +53,9 @@ component:SearchsecurityComponent
     AddsecurityComponent,
     SearchComponent,
     SearchsecurityComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewallempComponent,
+    ViewallsecurityComponent
   ],
   imports: [
     BrowserModule,
