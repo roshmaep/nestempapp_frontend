@@ -14,6 +14,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewallempComponent } from './viewallemp/viewallemp.component';
 import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.component';
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -43,6 +46,14 @@ component:SearchsecurityComponent
 {
   path:"viewsecurity",
   component:ViewallsecurityComponent
+},
+{
+  path:"emplogin",
+  component:EmploginComponent
+},
+{
+  path:"viewprofile",
+  component:ViewprofileComponent
 }
 ]
 @NgModule({
@@ -55,7 +66,10 @@ component:SearchsecurityComponent
     SearchsecurityComponent,
     NavbarComponent,
     ViewallempComponent,
-    ViewallsecurityComponent
+    ViewallsecurityComponent,
+    EmploginComponent,
+    EmpnavbarComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,
