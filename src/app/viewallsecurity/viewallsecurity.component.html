@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row g-3 mt-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4">
+
+        <table class="table table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Security code</th>
+                    <th scope="col">Security Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Email ID</th>
+                    <th scope="col">Phone number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of data">
+                    <td>{{i.scode}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.phone}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+</div>

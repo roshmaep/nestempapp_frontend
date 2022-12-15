@@ -35,5 +35,11 @@ export class ApiService {
   deletesecurity=(datatosend:any)=>{
     return this.http.post("http://localhost:8080/deletesecurity",datatosend)
   }
+  viewemployee=()=>{
+    return this.http.get("http://localhost:8080/viewallemp")
+  }
+  viewsecurity=()=>{
+    return this.http.get("http://localhost:8080/viewallsecurity")
+  }
   
 }
