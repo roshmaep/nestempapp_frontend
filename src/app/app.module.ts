@@ -20,6 +20,19 @@ import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
 import { ViewsecurityprofileComponent } from './viewsecurityprofile/viewsecurityprofile.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component';
+import { LeavestatusComponent } from './leavestatus/leavestatus.component';
+import { ViewleaveapplicationComponent } from './viewleaveapplication/viewleaveapplication.component';
+import { ViewemplogComponent } from './viewemplog/viewemplog.component';
+import { DailyemploginComponent } from './dailyemplogin/dailyemplogin.component';
+import { ViewvisitorlogComponent } from './viewvisitorlog/viewvisitorlog.component';
+import { ViewdailyvisitorlogComponent } from './viewdailyvisitorlog/viewdailyvisitorlog.component';
+import { ViewsecurityemplogComponent } from './viewsecurityemplog/viewsecurityemplog.component';
+import { SecurityviewemployeeComponent } from './securityviewemployee/securityviewemployee.component';
+import { SecurityviewdailyemplogComponent } from './securityviewdailyemplog/securityviewdailyemplog.component';
+import { VisitorlogComponent } from './visitorlog/visitorlog.component';
+import { SecurityviewvisitorlogComponent } from './securityviewvisitorlog/securityviewvisitorlog.component';
+import { SecurityviewdailyvisitorComponent } from './securityviewdailyvisitor/securityviewdailyvisitor.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -64,8 +77,50 @@ component:SearchsecurityComponent
 {
   path:"viewsecurityprofile",
   component:ViewsecurityprofileComponent
-}
+},{
+path:"applyleave",
+component:ApplyleaveComponent
 
+},{
+  path:"leavestatus",
+  component:LeavestatusComponent
+},{
+  path:"viewleave",
+  component:ViewleaveapplicationComponent
+},{
+  path:"viewemployeelog",
+  component:ViewemplogComponent
+},
+{
+  path:"dailyemployeelog",
+  component:DailyemploginComponent
+},{
+  path:"viewvisitorlog",
+  component:ViewvisitorlogComponent
+},{
+  path:"dailyvisitorlog",
+  component:ViewdailyvisitorlogComponent
+},{
+  path:"employeelog",
+  component:ViewsecurityemplogComponent
+},{
+  path:"securityviewemplog",
+  component:SecurityviewemployeeComponent
+},
+{
+  path:"securitydaliyviewemp",
+  component:SecurityviewdailyemplogComponent
+},{
+  path:"visitorlog",
+  component:VisitorlogComponent
+},
+{
+  path:"securityviewvisitor",
+  component:SecurityviewvisitorlogComponent
+},{
+  path:"securityviewdailyvisitor",
+  component:SecurityviewdailyvisitorComponent
+}
 ]
 @NgModule({
   declarations: [
@@ -83,7 +138,20 @@ component:SearchsecurityComponent
     ViewprofileComponent,
     SecurityloginComponent,
     SecuritynavbarComponent,
-    ViewsecurityprofileComponent
+    ViewsecurityprofileComponent,
+    ApplyleaveComponent,
+    LeavestatusComponent,
+    ViewleaveapplicationComponent,
+    ViewemplogComponent,
+    DailyemploginComponent,
+    ViewvisitorlogComponent,
+    ViewdailyvisitorlogComponent,
+    ViewsecurityemplogComponent,
+    SecurityviewemployeeComponent,
+    SecurityviewdailyemplogComponent,
+    VisitorlogComponent,
+    SecurityviewvisitorlogComponent,
+    SecurityviewdailyvisitorComponent
   ],
   imports: [
     BrowserModule,
