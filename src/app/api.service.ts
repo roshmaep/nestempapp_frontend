@@ -53,5 +53,54 @@ export class ApiService {
   getsecurityprofile=(datatosend:any)=>{
     return this.http.post("http://localhost:8080/securityviewprofile",datatosend)
   }
-  
+  applyLeave=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/addleaves",datatosend)
+  }
+  leaveStatus=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/updatestatus",dataToSend)
+  }
+  viewLeave=()=>{
+    return this.http.get("http://localhost:8080/viewallleaves")
+  }
+  viewEmployeeLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllEmployeeLog")
+  }
+  viewDailyEmployeeLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyEmployeeLog",dataToSend)
+  }
+  viewVisitorLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllVisitorLog")
+  }
+  viewDailyVisitorLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
+  }
+  addEmployeeLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logEmployee",dataToSend)
+  }
+  viewsecurityEmployeeLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllEmployeeLog")
+  }
+  securityviewDailyEmployeeLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyEmployeeLog",dataToSend)
+  }
+  addVisitorLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logVisitor",dataToSend)
+  }
+  securityviewVisitorLog=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllVisitorLog")
+  }
+  securityviewDailyVisitorLog1=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
+  }
 }

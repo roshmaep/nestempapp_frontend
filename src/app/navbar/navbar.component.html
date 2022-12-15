@@ -10,23 +10,57 @@
             <a class="nav-link active" aria-current="page" routerLink="/">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/addemp">ADD EMPLOYEE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/viewemp">VIEW ALL EMPLOYEE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/adds">ADD SECURITY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/viewsecurity">VIEW ALL SECURITY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/searchemp">SEARCH EMPLOYEE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/searchs">SEARCH SECURITY</a>
-          </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Employee
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/addemp"> Add employee</a></li>
+                <li><a class="dropdown-item" routerLink="/viewemp">View employee</a></li>
+                <li><a class="dropdown-item" routerLink="/searchemp">Search employee</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Security
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/adds"> Add securuty</a></li>
+                <li><a class="dropdown-item" routerLink="/viewsecurity">View security</a></li>
+                <li><a class="dropdown-item" routerLink="/searchs">Search security</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/viewleave">View all leave</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Employee log
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/viewemployeelog"> View employee log</a></li>
+                <li><a class="dropdown-item" routerLink="/dailyemployeelog">View daily employee log</a></li>
+                
+                
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Visitor log
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/viewvisitorlog"> View visitor log</a></li>
+                <li><a class="dropdown-item" routerLink="/dailyvisitorlog">View daily visitor log</a></li>
+                
+                
+              </ul>
+            </li>
+  
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" routerLink="/">LOG OUT</a>
           </li>
