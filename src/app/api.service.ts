@@ -61,7 +61,7 @@ export class ApiService {
     return this.http.post("http://localhost:8080/updatestatus",dataToSend)
   }
   viewLeave=()=>{
-    return this.http.get("http://localhost:8080/viewallleaves")
+    return this.http.get("http://localhost:8080/viewAllLeaves")
   }
   viewEmployeeLog=()=>
   {
@@ -103,4 +103,9 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
   }
+  updateStatus=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/updatestatus",dataToSend)
+  }
+  
 }

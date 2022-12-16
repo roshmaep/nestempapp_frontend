@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./addemployee.component.css']
 })
 export class AddemployeeComponent {
-  code=""
+  empcode=""
   name=""
   address=""
   email=""
@@ -19,14 +19,14 @@ export class AddemployeeComponent {
   constructor(private api:ApiService){}
   readValues=()=>
   {
-  let data:any={"code":this.code,"name":this.name,"address":this.address,"email":this.email,"phone":this.phone,"designation":this.designation,"username":this.username,"password":this.password,"cpassword":this.password}
+  let data:any={"empcode":this.empcode,"name":this.name,"address":this.address,"email":this.email,"phone":this.phone,"designation":this.designation,"username":this.username,"password":this.password,"cpassword":this.password}
   console.log(data)
   this.api.addemployee(data).subscribe(
     (response:any)=>{console.log(response)
       if(response.status =="success"){
         alert("employee added successfully")
        
-        this.code=""
+        this.empcode=""
         this.name=""
         this.address=""
         this.email=""

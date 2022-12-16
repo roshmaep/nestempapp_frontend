@@ -33,6 +33,8 @@ import { SecurityviewdailyemplogComponent } from './securityviewdailyemplog/secu
 import { VisitorlogComponent } from './visitorlog/visitorlog.component';
 import { SecurityviewvisitorlogComponent } from './securityviewvisitorlog/securityviewvisitorlog.component';
 import { SecurityviewdailyvisitorComponent } from './securityviewdailyvisitor/securityviewdailyvisitor.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -120,6 +122,9 @@ component:ApplyleaveComponent
 },{
   path:"securityviewdailyvisitor",
   component:SecurityviewdailyvisitorComponent
+},{
+  path:"home",
+  component:HomeComponent
 }
 ]
 @NgModule({
@@ -151,7 +156,9 @@ component:ApplyleaveComponent
     SecurityviewdailyemplogComponent,
     VisitorlogComponent,
     SecurityviewvisitorlogComponent,
-    SecurityviewdailyvisitorComponent
+    SecurityviewdailyvisitorComponent,
+    HomeComponent,
+    NavbarhomeComponent
   ],
   imports: [
     BrowserModule,
