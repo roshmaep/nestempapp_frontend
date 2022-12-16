@@ -7,23 +7,83 @@ import { ApiService } from '../api.service';
   styleUrls: ['./leavestatus.component.css']
 })
 export class LeavestatusComponent {
-  empId:any=""
-  searchData:any=[]
-  constructor(private api:ApiService){
-    this.empId=localStorage.getItem("userInfo")
-  }
+  // empId:any=""
+  // searchData:any=[]
+  // constructor(private api:ApiService){
+  //   this.empId=localStorage.getItem("userInfo")
+  // }
   
-  readValue=()=>
-  {
-    let data:any={"empId":this.empId}
-    console.log(data)
-    this.api.searchStatus(data).subscribe(
-      (response:any)=>
-      {
-       this.searchData=response
+  // readValue=()=>
+  // {
+  //   let data:any={"empId":this.empId}
+  //   console.log(data)
+  //   this.api.searchStatus(data).subscribe(
+  //     (response:any)=>
+  //     {
+  //      this.searchData=response
         
+  //     }
+  //   )
+  // }
+  // data:any=[]
+
+
+  constructor(private api:ApiService){
+
+
+
+    this.empId=localStorage.getItem("userInfo")
+
+    api.viewLeave().subscribe(
+
+      (response:any)=>
+
+      {
+
+        this.data=response
+
       }
+
     )
+
   }
-  data:any=[]
+
+
+
+empId:any=""
+
+searchData:any=[]
+
+
+
+ 
+
+
+
+
+readValue=()=>
+
+{
+
+  let data:any={"empId":this.empId}
+
+  console.log(data)
+
+  this.api.searchStatus(data).subscribe(
+
+    (response:any)=>
+
+    {
+
+     this.searchData=response
+
+     
+
+    }
+
+  )
+
+}
+
+data:any=[]
 }

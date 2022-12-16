@@ -1,5 +1,5 @@
 <app-empnavbar></app-empnavbar>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -11,12 +11,12 @@
                     
 
                 </div>
-              <!--  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+               <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
                    
                     <label for="" class="form-label"><h5>CLICK THE BUTTON BELOW</h5> </label>
 
-                </div>-->
+                </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
@@ -40,4 +40,90 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center g-3 mt-4">
+
+                    <label for="" class="form-label"><h2>MY LEAVE STATUS</h2> </label>
+                    
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+
+                        <thead>
+
+                        <tr scope="row">
+
+                            <th scope="col">Leave type</th>
+
+                            <th scope="col">Remarks</th>
+
+                            <th scope="col">From date</th>
+
+                            <th scope="col">To date</th>
+
+                            <th scope="col">Action</th>
+
+                            </tr></thead>
+
+                        <tbody>
+
+                        <tr scope="row">
+
+                            <td scope="col">{{data[0].type}}</td>
+
+                            <td scope="col">{{data[0].remarks}}</td>
+
+                            <td scope="col">{{data[0].fromDate}}</td>
+
+                            <td scope="col">{{data[0].toDate}}</td>
+
+                            <td><button (click)="readValue()" class="btn btn-primary">View Status</button></td>
+
+                        </tr>
+                        <tr>
+
+                        <td *ngFor="let i of searchData">
+                            
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4">
+                        <label for="" class="form-label"><b>Leave Status</b></label>
+                            
+                      <input type="text" class="form-control" *ngIf="i.status==1;else rejected" value="Accepted">
+
+                     <ng-template #rejected>
+
+                        <input type="text" class="form-control" value="Rejected">
+
+                    </ng-template>
+                            
+                    </div>   
+                      </td>
+
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
