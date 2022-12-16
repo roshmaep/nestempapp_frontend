@@ -56,10 +56,6 @@ export class ApiService {
   applyLeave=(datatosend:any)=>{
     return this.http.post("http://localhost:8080/addleaves",datatosend)
   }
-  leaveStatus=(dataToSend:any)=>
-  {
-    return this.http.post("http://localhost:8080/updatestatus",dataToSend)
-  }
   viewLeave=()=>{
     return this.http.get("http://localhost:8080/viewAllLeaves")
   }
@@ -106,6 +102,10 @@ export class ApiService {
   updateStatus=(dataToSend:any)=>
   {
     return this.http.post("http://localhost:8080/updatestatus",dataToSend)
+  }
+  searchStatus=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/searchstatus",dataToSend)
   }
   
 }
