@@ -113,6 +113,11 @@ export class ViewleaveapplicationComponent {
 
           console.log(response.status)
 
+           this.api.leavePending(accept).subscribe(
+            (response:any)=>{
+              console.log(response)
+            }
+           )  
           alert("success")
 
          

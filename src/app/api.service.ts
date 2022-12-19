@@ -107,5 +107,23 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/searchstatus",dataToSend)
   }
+  acceptLeave=(data:any)=>
+
+  {
+
+    return this.http.post("http://localhost:8080/accept",data)
+
+  }
+  leavePending=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/updatecounter",dataToSend)
+  }
+  viewLeavePending=(data:any)=>
+
+  {
+
+    return this.http.post("http://localhost:8080/viewPendingLeaves",data)
+
+  }
   
 }

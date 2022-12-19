@@ -35,6 +35,7 @@ import { SecurityviewvisitorlogComponent } from './securityviewvisitorlog/securi
 import { SecurityviewdailyvisitorComponent } from './securityviewdailyvisitor/securityviewdailyvisitor.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarhomeComponent } from './navbarhome/navbarhome.component';
+import { LeavependingComponent } from './leavepending/leavepending.component';
 const myRoute:Routes=[
   {
  path:"",
@@ -125,6 +126,10 @@ component:ApplyleaveComponent
 },{
   path:"home",
   component:HomeComponent
+},
+{
+  path:"leavepending",
+  component:LeavependingComponent
 }
 ]
 @NgModule({
@@ -158,7 +163,8 @@ component:ApplyleaveComponent
     SecurityviewvisitorlogComponent,
     SecurityviewdailyvisitorComponent,
     HomeComponent,
-    NavbarhomeComponent
+    NavbarhomeComponent,
+    LeavependingComponent
   ],
   imports: [
     BrowserModule,
